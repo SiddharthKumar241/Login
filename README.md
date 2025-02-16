@@ -23,6 +23,7 @@ CSS3 (Animations & Styling) 🎨
 JavaScript (Form Validations) 📝
 
 📂 project-folder/
+
  ├── 📜 index.html        # Main Login Page
  
  ├── 📜 login.css         # Styling & Bubble Animatio
