@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script type="text/javascript" src="login1.js"></script>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="bubbles">
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+    </div>
+
+
+    <div id="login">
+        <div id="picture"><img src="./avi.png" height="150px" width="150px"></div>
+        <h3 id="h2">Welcome Back!</h3>
+        <p style="color:grey">Please Enter Your Details</p>
+        
+        <label for="username">Username</label><br>
+        <input id="username" type="text" placeholder="Enter User_Name" width="auto" onchange="Uservalidations(this.id)"><br><br>
+        
+        <label for="password">Password</label><br>
+        <input id="password" type="password" name="password" placeholder="Enter password" onchange="password_validations(this.id)"><br><br>
+        
+        <input type="checkbox" name="checkbox">Remember for 30 days
+        <a href="" id="Forgot_password">Forgot password?</a><br><br>
+        
+        <button onclick="window.location.href='Tribute.html'" id="signin-button">
+            Sign in
+        </button><br><br>
+
+        <button onclick="window.location.href='Google.html'" id="google-signin-button">
+            <img id="img" src="./icons8-google-logo-48.png" alt="Google Logo"> Sign in with Google
+        </button><br> 
+        
+        <p style="color:grey;">Don't have an account? <u><a href="">Sign up</a></u></p>
+    </div>
+</body>
+</html>

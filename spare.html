@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script type="text/javascript" src="login1.js"></script>
+    <style type="text/css" src="login.css">
+        #login{
+            max-width: 300px;
+            margin:auto;
+            padding:20px;
+            border:2px solid black;
+            border-radius:10px;
+            background-color: rgba(212, 226, 154, 0.923);
+            box-shadow:50px rgb(17, 17, 17);
+        }
+        #h2{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: bisque;
+            }
+        #input{
+           padding:3px 60px 3px 60px;
+           border-radius: 10px;
+           background-color: rgb(200, 235, 223);
+        }
+        #img{
+            height:30px;
+            width:30px;
+        }
+        #button{
+            align-items: center;
+            padding:0px 70px;
+            border-radius:20px;
+            background-color: rgb(200, 235, 223);
+        }
+        #picture{
+            padding-left:70px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login" style="border-radius: 10px;">
+        <div id="picture"><img src="./avi.png" height="150px" width="150px"></div>
+        <h3 id="h2">Welcome Back !</h3>
+        <p style="color:grey">Please Enter Your Details</p>
+        Username<br>
+        <input id="input" type="text" placeholder="Enter User_Name" width="auto" onchange="Uservalidations(id)"><br><br>
+        Password<br>
+        <input id="input" type="password" name="password" placeholder="enter password" onchange="password_validations(id)"><br><br>
+        <input style="align-items: left;" type="checkbox" name="checkbox">Remember for 30 days
+        <a href="" id="Forgot_password" >Forgot_password</a><br><br>
+        <button onclick="window.location.href='Tribute.html'" style="padding:3px 120px 3px 120px; border-radius:10px; background-color: rgb(200, 235, 223);">
+            Sign in
+        </button><br><br>
+        
+        <button onclick="window.location.href='Google.html'" id="button" ><img id="img" src="./icons8-google-logo-48.png " alt="google.logo"> Sign in with Google</button><br> 
+        <p style="color:grey;">Dont't have an account <u><a href="">Sign_up</a></u></p>
+    </div>
+</body>
+</html>
